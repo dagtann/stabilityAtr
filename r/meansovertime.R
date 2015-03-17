@@ -6,6 +6,7 @@ leg <- read.csv(file.path(pathData, 'legitimationIndex.csv'))
 rep <- read.csv(file.path(pathData, 'repressionIndex.csv'))
 
 ## === Draw plots function =================================
+## MS & DT, Berlin, 2013
 drawPlots <- function() {
 ## --- Subset data -----------------------------------------
   require(reshape)
