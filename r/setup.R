@@ -1,9 +1,9 @@
 ## --- Preliminaries --------------------------------------------
-rm(ls = ls())
+rm(list = ls())
 if( Sys.info()[['user']] == 'dag' ){
-  pathData = '/home/dag/Dropbox/data/StabilityAtr/data';
-  pathOut = '/home/dag/Dropbox/data/StabilityAtr/out';
-  pathCode = '/home/dag/gitreps/stabilityAtr/r';
+  pathData = '/Users/dag/Dropbox/stabilityAtr/data';
+  pathOut = '/Users/dag/Dropbox/stabilityAtr/out';
+  pathCode = '/Users/dag/gitreps/stabilityAtr/r';
   options(help_type = 'html')
 }
 
