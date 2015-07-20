@@ -9,3 +9,9 @@ if( Sys.info()[['user']] == 'dag' ){
 
 packs <- c('MASS', 'ggplot2', 'ggthemes')
 invisible(lapply(packs, library, character.only = TRUE))
+
+load(file.path(pathData, 'CJSD Data 2015-03-31.RData'))
+rep <- read.csv(
+  file.path(pathData, '2015-07-14_repressionIndex.csv'), 
+  stringsAsFactors = FALSE
+)

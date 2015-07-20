@@ -61,12 +61,6 @@ drawPlots <- function() {
     )
   ) +
   geom_point(aes(size = n)) +       ## add point & size by n
-  geom_jitter(
-    data = df.all, 
-    aes(x = year, y = indicator, size = NULL), 
-    position = position_jitter(width = .1, height = .1),
-    size = 4, alpha = .2
-  ) +
   scale_size_continuous(   ## and adjust size scale & labels
     range  = c(4, 7), 
     breaks = c(70, 80, 90, 100, 110),
@@ -116,7 +110,7 @@ drawPlots <- function() {
       axis.text.x = element_text(vjust = 1),
       axis.title.y = element_text(vjust = .2),
       panel.grid.major = element_line(colour = "grey80"),
-      panel.grid.minor = element_line(colour = "grey88"),
+      panel.grid.minor = element_blank(),
       panel.border = element_blank(),
       plot.margin = unit(c(0, 0, 0, 0) +.1, unit = "lines")
     )
@@ -160,10 +154,10 @@ drawPlots <- function() {
   )
   dev.off()
   
-  detach(package:gridExtra)
-  detach(package:grid)
-  detach(package:ggthemes)
-  detach(package:ggplot2)
+  #detach(package:gridExtra)
+  #detach(package:grid)
+  #detach(package:ggthemes)
+  #detach(package:ggplot2)
   
   rm(pt, ht, p, h )
 }
