@@ -1,4 +1,4 @@
-## --- Preliminaries --------------------------------------------
+## --- Preliminaries ---------------------------------------
 rm(list = ls())
 if( Sys.info()[['user']] == 'dag' ){
   pathData = '/Users/dag/Dropbox/stabilityAtr/data';
